@@ -1,12 +1,11 @@
-<script>
+<script lang="ts">
     import'../../../lib/custom-styles.css'
     import { onMount } from 'svelte'
     
     export let form
-
-    let loginData = {
-        email: '',
-        password: '',
+     let loginData = {
+        email: '' as string,
+        password: '' as string,
     }
 
     let showFormulSenha = true
@@ -37,7 +36,7 @@
 
         } 
         if (form?.error){
-            // senao tem token, executa função para mostrar msg de erro de login
+            // se nao tem token, executa função para mostrar msg de erro de login
             MsgErrorLogin ()
         }
     })

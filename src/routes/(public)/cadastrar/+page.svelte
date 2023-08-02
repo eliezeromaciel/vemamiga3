@@ -1,1 +1,0 @@
-<h2>página de cadastro </h2>
