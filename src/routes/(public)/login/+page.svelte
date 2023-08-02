@@ -86,7 +86,7 @@
                     <label class=" d-flex flex-column py-1">
                         <input  type="hidden">   <!-- TAG existente apenas para nao mostrar erro quanto necessidade de "control" -->
                         <a href="#" id="forget-password" class="forget-password text-white text-info" on:click={esqueceSenha} >Esqueceu sua senha?</a>
-                        <a href="cadastrar" class="text-white text-info">Cadastrar-se</a>
+                        <a href="/autocadastro" class="text-white text-info">Cadastrar-se</a>
                     </label> 
                 </form>
             </div>
