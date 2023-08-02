@@ -1,17 +1,10 @@
 <script lang="ts">
     import Navbar from "$lib/Navbar.svelte";
-    import { onMount } from "svelte";
-
-    onMount ( ( ) => {
-        const teste = localStorage.getItem('token')
-        if (!teste) {
-            window.location.href = '/login'
-        }
-
-    })
-
-
+    import Splash from "$lib/Splash.svelte";
 </script>
 
-<Navbar/>
-<slot/> 
+
+<Splash>
+    <Navbar/>
+    <slot/> 
+</Splash>

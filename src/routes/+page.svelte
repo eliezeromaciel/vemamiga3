@@ -1,5 +1,8 @@
 <script>
     import Navbar from "$lib/Navbar.svelte";
+    import Splash from "$lib/Splash.svelte";
 </script>
 
-<Navbar/>
+<Splash>
+    <Navbar/>
+</Splash>
