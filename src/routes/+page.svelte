@@ -5,4 +5,5 @@
 
 <Splash>
     <Navbar/>
+    Home
 </Splash>

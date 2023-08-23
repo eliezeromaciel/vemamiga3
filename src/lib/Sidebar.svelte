@@ -23,9 +23,9 @@
                 </a>
                 <ul class="nav collapse ms-1 flex-column " id="sidemenu2" data-bs-parent="#menu"> 
                     <li class="nav-item my-1" data-bs-toggle="offcanvas">
-                        <a class="nav-link text-white ms-3" href="/clientes" aria-current="page">
+                        <a class="nav-link text-white ms-3" href="/usuario" aria-current="page">
                             <i class="bi bi-people"></i>
-                            Clientes
+                            Usuário
                         </a>
                     </li>
                 </ul>
