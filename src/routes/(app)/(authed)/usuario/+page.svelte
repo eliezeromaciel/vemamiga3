@@ -33,8 +33,8 @@
             <form action="/Acesso/Autocadastro" method="post"><input name="__RequestVerificationToken" type="hidden" value="inWdwJ7s84TmuNrOKUo0QjDg3aBd1dwJaob_bgsjpD3ekpNQxUYxrVLvJFGvmHVsI82qwan7ehDaFBPRWAKRi3OrPEtzV4XzRcydhoqoCYk1"> 
                 <div class="form-horizontal">
                     <div class="row">
-                        <div class="row m-3 ">
-                            <label class="col-1" for="Login">Login</label>
+                        <div class="row m-3 d-flex align-items-center ">
+                            <label class="col-1 " for="Login">Login</label>
                             <div class="col-3">
                                 <input class="form-control text-box single-line" id="Login" name="Login" type="text" value="" maxlength="100">
                             </div>
@@ -42,16 +42,16 @@
                             <div class="col-3">
                                 <input class="form-control text-box single-line"  id="CodigoExterno" name="CodigoExterno" type="text" value="" maxlength="100">
                             </div>
-                            <div class="col-4">
-                                <label>
+                            <div class="col-4 d-flex justify-content-center">
+                                <label class="m-2">
                                     <input class="form-check-input me-1" type="checkbox" value="" id="AD" >
                                     AD
                                 </label>
-                                <label>
+                                <label class="m-2">
                                     <input class="form-check-input me-1" type="checkbox" value="" id="Administrador" >
                                     Administrador
                                 </label>
-                                <label>
+                                <label class="m-2">
                                     <input class="form-check-input me-1" type="checkbox" value="" id="Inativo" >
                                     Inativo
                                 </label>
@@ -60,7 +60,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="row m-3">
+                        <div class="row m-3 d-flex align-items-center">
                             <label class="col-1" for="Nome">Nome</label>
                             <div class="col-11">
                                 <input class="form-control text-box single-line" id="Nome" name="Nome" type="text" value="" maxlength="100">
@@ -69,7 +69,7 @@
                     </div>
                     
                     <div class="row">
-                        <div class="row m-3">
+                        <div class="row m-3 d-flex align-items-center">
                             <label class="col-1" for="E-mail">E-mail</label>
                             <div class="col-11">
                                 <input class="form-control text-box single-line" id="E-mail" name="E-mail" type="e-mail" value="" maxlength="100">
@@ -78,7 +78,7 @@
                     </div>
                   
                     <div class="row">
-                        <div class="row m-3">
+                        <div class="row m-3 d-flex align-items-center">
                             <label class="col-1" for="E-mail">Telefone Fixo</label>
                             <div class="col-4">
                                 <input class="form-control text-box single-line" id="Telfixo" name="Telfixo" type="tel" value="" maxlength="100">
@@ -96,17 +96,17 @@
                     </div>
 
                     <div class="row">
-                        <div class="row m-3">
+                        <div class="row m-3 ">
                             <label class="col-1" for="E-mail">Perfis de Acesso</label>
                             <div class="col-5">
-                                <span class="p-2 text-left" style="font-size: 0.8rem;">Perfis Disponíveis</span>
+                                <span class="p-2 d-flex justify-content-start" style="font-size: 0.8rem;">Perfis Disponíveis</span>
                                 <div class="list-box">
                                     <ListaPerfis store={perfis} done={false} />
                                 </div>
                             </div>
                             <div class="col-1 d-flex justify-content-center align-items-center"><i class="bi bi-arrow-left-right"></i></div>
                             <div class="col-5">
-                                <span class="p-2" style="font-size: 0.8rem;">Perfis Associados</span>
+                                <span class="p-2 d-flex justify-content-start" style="font-size: 0.8rem;">Perfis Associados</span>
                                 <div class="list-box">
                                     <ListaPerfis store={perfis} done={true} />
                                 </div>
@@ -115,17 +115,17 @@
                     </div>
 
                     <div class="row">
-                        <div class="row m-3">
+                        <div class="row m-3 ">
                             <label class="col-1" for="E-mail">Empresas</label>
                             <div class="col-5">
-                                <span class="p-2 text-left" style="font-size: 0.8rem;">Empresas Disponíveis</span>
+                                <span class="p-2 d-flex justify-content-start" style="font-size: 0.8rem;">Empresas Disponíveis</span>
                                 <div class="list-box">
                                     <ListaEmpresasDisponiveis store={empresas} done={false} />
                                 </div>
                             </div>
                             <div class="col-1 d-flex justify-content-center align-items-center"><i class="bi bi-arrow-left-right"></i></div>
                             <div class="col-5">
-                                <span class="p-2" style="font-size: 0.8rem;">Empresas Associados</span>
+                                <span class="p-2 d-flex justify-content-start" style="font-size: 0.8rem;">Empresas Associados</span>
                                 <div class="list-box">
                                     <ListaEmpresasDisponiveis store={empresas} done={true} />
                                 </div>
