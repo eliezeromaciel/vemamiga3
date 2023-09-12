@@ -17,6 +17,18 @@
 		{ done: false, description: 'Dancing Bar do Jão' }
 	]);
 
+
+    function formatPhoneNumber(event: Event, inputId: string): void {
+        const input = document.getElementById(inputId);
+        const phoneNumber = event.target.value.replace(/\D/g, '');
+
+        if (phoneNumber.length <= 10) {
+            input.value = `(${phoneNumber.substring(0, 2)}) ${phoneNumber.substring(2, 6)}-${phoneNumber.substring(6, 10)}`;
+        } else {
+            input.value = `(${phoneNumber.substring(0, 2)}) ${phoneNumber.substring(2, 7)}-${phoneNumber.substring(7, 11)}`;
+        }
+    }
+
 </script>
 
 
@@ -81,13 +93,19 @@
                         <div class="row m-3 d-flex align-items-center">
                             <label class="col-1" for="E-mail">Telefone Fixo</label>
                             <div class="col-4">
-                                <input class="form-control text-box single-line" id="Telfixo" name="Telfixo" type="tel" value="" maxlength="100">
+                                <input class="form-control text-box single-line" 
+                                    id="Telfixo" name="Telfixo" type="tel" 
+                                    value="" maxlength="14" on:input={e => formatPhoneNumber(e, 'Telfixo')} 
+                                >
                             </div>
                             <label class="col-1" for="E-mail">Telefone Celular</label>
                             <div class="col-4">
                                 <div class="input-group">
                                     <span class="input-group-text " id="basic-addon1">+55</span>
-                                    <input class="form-control text-box single-line " data-val="true" id="Celular" name="Celular" type="tel" maxlength="20">
+                                    <input class="form-control text-box single-line" 
+                                        id="Celular" name="Celular" type="tel" 
+                                        value="" maxlength="15" on:input={e => formatPhoneNumber(e, 'Celular')} 
+                                    >
                                 </div>
                              
                             </div>

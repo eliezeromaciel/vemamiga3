@@ -5,7 +5,7 @@
 	export let done;
 </script>
 
-<ul class="p-0">
+<ul class="p-0 m-0">
 	{#each $store.filter((todo) => todo.done === done) as todo (todo.id)}
 		<ul class="p-0"
 			class:done
