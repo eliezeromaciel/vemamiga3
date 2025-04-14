@@ -163,6 +163,7 @@
         background-image: url('telaFundo.png');
         background-size: cover;
         background-position: center;
+        overflow: hidden;
         min-height: 100vh;
     }
 
